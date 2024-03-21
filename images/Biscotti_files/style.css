@@ -1,0 +1,193 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Fraunces', serif;
+    text-transform: uppercase;
+}
+
+body{
+    background-color: black;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-size: cover;
+        background-image: url("images/k8-2WzYHsaWyHo-unsplash.jpg");
+        opacity: 0.5;
+    }
+}
+
+header{
+    z-index: 999;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: antiquewhite;
+    align-items: center;
+    transition: ease 1s;
+}
+
+header .logo{
+    display: flex;
+    margin-right: 50px;
+}
+
+header img{
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+    transition: ease 2s;
+}
+
+header .logo-name{
+    margin-left: 20px;
+    align-self: center;
+}
+
+header .navbar{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+header nav{
+    justify-content: center;
+}
+
+header nav a{
+    position: relative;
+    align-items: center;
+    margin: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+    transition: ease 0.5;
+}
+
+header nav a::before{
+    content: '';
+    position: absolute;
+    background: antiquewhite;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+}
+
+header nav a:hover:before{
+    content: '';
+    background: antiquewhite;
+    width: 100%;
+    height: 2px;
+    bottom: 10;
+    left: 0;
+    transition: ease 0.3s;
+}
+
+header .navbar .navbar-icons{
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+
+header .navbar .navbar-icons i{
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.home{
+    position: relative;
+    transition: ease 0.5s;
+}
+
+.home .section{
+    display: flex;
+    padding: 50px 100px;
+    align-items: center;
+}
+
+.home .section-content{
+    padding: 0px 40px; 
+}
+
+.home .section-content .welcome{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-align:center;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.home .section-content .brand-name{
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    text-align:center;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.home .section-content .brand-content{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    text-align:center;
+    justify-content: center;
+    color: antiquewhite;
+    transition: ease-out 1s;
+}
+
+.home .section-content .section-coffee-icon{
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.home .section-content .section-coffee-icon i{
+    padding: 40px;
+    font-size: 60px;
+    color: #b07b58;
+}
+
+.section-image img{
+    margin-left: 80px;
+    margin-right: 40px;
+    border: 3px wheat solid;
+    width: 380px;
+    height: 680px;
+    border-radius: 30px;
+    transition: ease 2s;
+}
+
+.home .section .social-media-icons {
+    padding: 10px;
+    position: relative;
+    background: rgba(245, 222, 179, 0.866);
+    border: 1px solid antiquewhite;
+    border-radius: 10px;
+}
+
+.home .section .social-media-icons i{
+    color: #b07b58;
+    font-size: 20px;
+
+    padding: 10px;
+}
+
+.home .section .social-media-icons i:hover{
+    font-size: 28px;
+} 
+
+
+

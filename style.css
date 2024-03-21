@@ -1,0 +1,355 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Fraunces', serif;
+    text-transform: uppercase;
+}
+
+body{
+    background-color: black;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-size: cover;
+        background-image: url("images/k8-2WzYHsaWyHo-unsplash.jpg");
+        opacity: 0.5;
+    }
+}
+
+body .grid{
+    display: grid;
+}
+
+header{
+    /* background-image: url("images/k8-2WzYHsaWyHo-unsplash.jpg");
+    background-size: cover; */
+    background-color:rgb(27 12 4);
+    z-index: 999;
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    color: antiquewhite;
+    align-items: center;
+    transition: ease 1s;
+}
+
+header .logo{
+    display: flex;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+header img{
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+    transition: ease 2s;
+}
+
+header .logo-name{
+    margin-left: 20px;
+    align-self: center;
+}
+
+header .navbar{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+header nav{
+    justify-content: center;
+}
+
+header nav a{
+    position: relative;
+    align-items: center;
+    margin: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+    transition: ease 0.5;
+}
+
+header nav a::before{
+    content: '';
+    position: absolute;
+    background: antiquewhite;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+}
+
+header nav a:hover:before{
+    content: '';
+    background: antiquewhite;
+    width: 100%;
+    height: 2px;
+    bottom: 10;
+    left: 0;
+    transition: ease 0.3s;
+}
+
+header .navbar .navbar-icons{
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+
+header .navbar .navbar-icons i{
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.home{
+    position: relative;
+    transition: ease 0.5s;
+    overflow: hidden;
+}
+
+.home .section{
+    margin-top: 150px;
+    display: flex;
+    padding: 50px 100px;
+    align-items: center;
+}
+
+.home .section-content{
+    padding: 0px 40px; 
+}
+
+.home .section-content .welcome{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-align:center;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.home .section-content .brand-name{
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    text-align:center;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.home .section-content .brand-content{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    text-align:center;
+    justify-content: center;
+    color: antiquewhite;
+    transition: ease-out 1s;
+}
+
+.home .section-content .section-coffee-icon{
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.home .section-content .section-coffee-icon i{
+    padding: 40px;
+    font-size: 60px;
+    color: #b07b58;
+}
+
+.section-image img{
+    margin-left: 80px;
+    margin-right: 40px;
+    border: 3px wheat solid;
+    width: 380px;
+    height: 680px;
+    border-radius: 30px;
+    transition: ease 2s;
+}
+
+.home .section .social-media-icons {
+    position: fixed;
+    right: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(245, 222, 179, 0.866);
+    border: 1px solid antiquewhite;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.home .section .social-media-icons i{
+    color: #b07b58;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.home .section .social-media-icons i:hover{
+    font-size: 28px;
+} 
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+.home2 .section2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    padding: 50px 100px;
+    align-items: center;
+}
+
+.home2 .section2-image img{
+    margin-right: 80px;
+    margin-right: 40px;
+    border: 3px wheat solid;
+    width: 380px;
+    height: 680px;
+    border-radius: 30px;
+    transition: ease 2s;
+}
+.home2 .section2-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px; 
+}
+
+.home2 .section2-content .blends-name{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-align:center;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.home2 .section2-content .blends-content{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    text-align:center;
+    color: antiquewhite;
+    transition: ease-out 1s;
+}
+
+.home .section2-content p{
+    color: antiquewhite ;
+}
+
+.home2 .section2-content .section2-coffee-icon{
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.home2 .section2-content .section2-coffee-icon i{
+    padding: 40px;
+    font-size: 60px;
+    color: #b07b58;
+}
+
+.home2 .section2-content .flexbox{
+    display: grid;
+}
+
+.home2 .section2-content .flavours-grid{
+    display: grid;
+    
+}
+
+.home2 .section2-content .flavours-grid .flavours img{
+    color: antiquewhite;
+    height: 220px;
+    width: 220px;
+    margin-right: 80px;
+    border: 3px wheat solid;
+    border-radius: 30px;
+    transition: ease 2s;
+}
+
+
+footer{
+    color: antiquewhite;
+    padding: 30px;
+    background-color:rgb(27 12 4);    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-customer-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-customer-service p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-customer-service a{
+    margin-bottom: 5px;
+    color: antiquewhite;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: ease 0.5;
+}
+
+.footer-contact-us{
+    text-align: center;
+}
+
+.footer-contact-us span{
+    font-size: 20px;
+}
+
+.footer-contact-us p{
+    margin-bottom: 5px;
+    color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: ease 0.5;
+}
+
+.footer-social p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-social{
+    text-align: center;
+}
+
+.footer-social i{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background: rgba(245, 222, 179, 0.866);
+    border-radius: 5px;
+    color: #b07b58;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+}
